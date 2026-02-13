@@ -29,13 +29,14 @@ st.sidebar.info(f"Вы установили стандарт: {comfort_threshold
 
 col1, col2, col3, col4 = st.columns(4)
 with col1:
-    st.metric("Объем рынка 2026", f"{stats['Прогноз (базовый)']/1e9:.1f} млрд ₽", "+12%")
+    st.metric("Объем рынка 2026", f"{stats['Прогноз (базовый)']/1e9:.1f} млрд ₽", "+12%",
+              "orange", delta_arrow="down")
 with col2:
     st.metric("Средний LTV", f"{stats['Объем рынка (выручка)']/stats['Количество клиентов']:,.0f} ₽")
 with col3:
-    st.metric("Доминирование DDX", f"{stats['Доля DDX Fitness в инвестициях']:.0f}%", "High Risk")
+    st.metric("Доминирование DDX", f"{stats['Доля DDX Fitness в инвестициях']:.0f}%")
 with col4:
-    st.metric("Средняя плотность", "0.9 м²", "Критично")
+    st.metric("Средняя плотность", "0.9 м²", "Критично мало", "red", delta_arrow="off")
 
 st.subheader("Прогноз тесноты по месяцам на 2026 год")
 months = {
