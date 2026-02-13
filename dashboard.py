@@ -65,4 +65,4 @@ plt.xticks(rotation=45)
 plt.legend()
 st.pyplot(fig)
 
-st.warning(f"В месяцах, где график ниже линии {comfort_threshold}, ваш бизнес теряет лояльность ЦА из-за тесноты.")
+st.warning(f"В месяцах, где график ниже линии {comfort_threshold}, бизнес теряет лояльность клиентов из-за тесноты.")
