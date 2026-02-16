@@ -34,7 +34,7 @@ with col1:
 with col2:
     st.metric("Средний LTV", f"{stats['Объем рынка (выручка)']/stats['Количество клиентов']:,.0f} ₽")
 with col3:
-    st.metric("Доминирование DDX", f"{stats['Доля DDX Fitness в инвестициях']:.0f}%")
+    st.metric("EBITDA", "14-16%")
 with col4:
     st.metric("Средняя плотность", "0.9 м²", "Критично мало", "red", delta_arrow="off")
 
